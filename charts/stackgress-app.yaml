@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
-  namespace: argocd
+  name: stackgres-argo-helm
+  namespace: stackgres
 spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/sqlAgent/stackgres.git
     targetRevision: HEAD
-    path: dev
+    chart: stackgres
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: stackgres
 
   syncPolicy:
     syncOptions:
