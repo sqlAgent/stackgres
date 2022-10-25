@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    owner: dan.pretselman@thetradedesk.com
+    team: scrum-dataops
+  labels:
+    alert-channel: dev-alert-blackhole
+    app.kubernetes.io/instance: ttd-namespaces
+    elbv2.k8s.aws/pod-readiness-gate-inject: enabled
+    kubernetes.io/metadata.name: stackgres
+    pullsecrets.adsrvr.net/enabled: "true"
+    team: scrum-dataops
+  name: stackgres
+spec:
+  finalizers:
+  - kubernetes
