@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/sqlAgent/stackgres.git
+    repoURL: https://github.com/sqlAgent/stackgres
     targetRevision: "1.3.1" 
     chart: stackgres-operator
   destination: 
