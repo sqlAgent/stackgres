@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/sqlAgent/stackgres.git
     targetRevision: HEAD
-    chart: stackgres
+    chart: charts
   destination: 
     server: https://kubernetes.default.svc
     namespace: stackgres
