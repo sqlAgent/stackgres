@@ -10,7 +10,7 @@ keywords:
 - cluster
 - stack
 - opinionated
-kubeVersion: 1.18.0-0 - 1.25.x-O
+kubeVersion: 1.18.0-0 - 1.25.0-0
 maintainers:
 - email: info@ongres.com
   name: OnGres Inc.

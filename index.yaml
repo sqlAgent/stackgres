@@ -3,9 +3,9 @@ entries:
   stackgres-operator:
   - apiVersion: v2
     appVersion: 1.3.3
-    created: "2022-10-26T03:06:07.8246205+01:00"
+    created: "2022-10-26T03:18:57.4327818+01:00"
     description: StackGres Operator
-    digest: 2a34eaa1de8cbe71e0baba00c31c6d71410214fc2625a6799a46aca340b93df1
+    digest: d21d656e82bc7145099c78aee3aea12caa5125eda1bcbc443636ea46e81b7378
     home: https://stackgres.io
     icon: https://assets.gitlab-static.net/uploads/-/system/project/avatar/12584701/logo-stackgres.png?width=64
     keywords:
@@ -15,7 +15,7 @@ entries:
     - cluster
     - stack
     - opinionated
-    kubeVersion: 1.18.0-0 - 1.25.x-O
+    kubeVersion: 1.18.0-0 - 1.25.0-0
     maintainers:
     - email: info@ongres.com
       name: OnGres Inc.
@@ -28,9 +28,9 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-10-26T03:06:07.8229075+01:00"
+    created: "2022-10-26T03:18:57.4317815+01:00"
     description: StackGres Operator
-    digest: fb318951079923c864b29a4f130d2a72c31f736bd71290db0ff8d635e0f6ae83
+    digest: 5369a069d28f87f444952cc9797b2a67a6a7170d03c89a0b86671da43c65cf0a
     home: https://stackgres.io
     icon: https://assets.gitlab-static.net/uploads/-/system/project/avatar/12584701/logo-stackgres.png?width=64
     keywords:
@@ -40,7 +40,7 @@ entries:
     - cluster
     - stack
     - opinionated
-    kubeVersion: 1.18.0-0 - 1.25.x-O
+    kubeVersion: 1.18.0-0 - 1.25.0-0
     maintainers:
     - email: info@ongres.com
       name: OnGres Inc.
@@ -51,4 +51,4 @@ entries:
     urls:
     - https://sqlagent.github.io/stackgres/stackgres-operator-1.3.1.tgz
     version: 1.3.1
-generated: "2022-10-26T03:06:07.8201692+01:00"
+generated: "2022-10-26T03:18:57.4287804+01:00"
