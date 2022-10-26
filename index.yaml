@@ -3,7 +3,7 @@ entries:
   stackgres-operator:
   - apiVersion: v2
     appVersion: 1.3.3
-    created: "2022-10-26T02:37:08.8296799+01:00"
+    created: "2022-10-26T02:59:57.8575237+01:00"
     description: StackGres Operator
     digest: 53bbfc2a503b239b7db35aa951f2e8f1004447746d4c818b33cc44fa81512268
     home: https://stackgres.io
@@ -24,11 +24,11 @@ entries:
     sources:
     - https://gitlab.com/ongresinc/stackgres
     urls:
-    - https://github.com/sqlAgent/stackgres/stackgres-operator-1.3.3.tgz
+    - https://sqlagent.github.io/stackgres/stackgres-operator-1.3.3.tgz
     version: 1.3.3
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-10-26T02:37:08.8281092+01:00"
+    created: "2022-10-26T02:59:57.8555234+01:00"
     description: StackGres Operator
     digest: b000b9bff8f981ef90da72002921966b6809d160a3a04bd9026b494f9861f5ee
     home: https://stackgres.io
@@ -49,6 +49,6 @@ entries:
     sources:
     - https://gitlab.com/ongresinc/stackgres
     urls:
-    - https://github.com/sqlAgent/stackgres/stackgres-operator-1.3.1.tgz
+    - https://sqlagent.github.io/stackgres/stackgres-operator-1.3.1.tgz
     version: 1.3.1
-generated: "2022-10-26T02:37:08.8260337+01:00"
+generated: "2022-10-26T02:59:57.8525243+01:00"
