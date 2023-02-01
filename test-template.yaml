@@ -1,0 +1,54 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: database-request
+  title: MS SQL Self Database Request
+  description: Request MS SQL Server relational database.
+  tags:
+    - mssql
+
+spec:
+  owner: OWNTEAM
+  type: service
+  
+  parameters:
+
+    - title: Provide some simple information
+      required:
+        - owningTeam
+        - databaseName
+        - description
+      properties:
+        owningTeam:
+          title: Owning team
+          type: string
+          description: Name of the team that owns this service
+          ui:field: UserGroupsPicker
+        databaseName:
+          title: Database name
+          type:
+            - string
+          description: Name of the database - alphanumerics only
+          pattern: ^[a-zA-Z0-9-]+$
+        description:
+          title: Short description for the purpose of this database
+          type: string
+        databaseSize:
+          title: Database inital size
+          type: string
+  
+  steps:
+    - id: provision
+      name: Provision
+      action: go:trigger-service-provisioning-pipeline
+      input:
+        parameters: ${{ parameters }}
+        user: ${{ user.entity.spec.profile }}
+        template_docker_image: production.docker/templates/mssql:1.0.0
+        flags:
+          vault_namespace: true
+
+  output:
+    links:
+      - title: Provisioning pipeline
+        url: '${{ steps.provision.output.pipeline }}'
